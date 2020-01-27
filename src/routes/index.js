@@ -47,6 +47,8 @@ import ShareApp from "../components/ShareApp";
 import Commission from "../components/Commission";
 import CommissionPayment from "../components/CommissionPayment";
 import BankAccounts from "../components/BankAccounts";
+import Chat from "../components/Chat";
+import Inbox from "../components/Inbox";
 
 
 const drawerCust = (props) => (<DrawerCustomization {...props} />);
@@ -58,6 +60,7 @@ const drawerNavigator = createDrawerNavigator({
     Offers              : Offers,
     Favorite            : Favorite,
     AboutApp            : AboutApp,
+    chat                : Chat,
     commission          : Commission,
     Faq                 : Faq,
     shareApp            : ShareApp,
@@ -79,7 +82,7 @@ const drawerNavigator = createDrawerNavigator({
 
 const appStack =  createStackNavigator({
 
-    // Sh3wza
+	// Sh3wza
 
     drawerNavigator: {
         screen: drawerNavigator,
@@ -278,6 +281,18 @@ const appStack =  createStackNavigator({
             header: null
         }
     },
+	chat: {
+		screen: Chat,
+		navigationOptions: {
+			header: null
+		}
+	},
+	inbox: {
+		screen: Inbox,
+		navigationOptions: {
+			header: null
+		}
+	},
 
 });
 
@@ -330,7 +345,7 @@ const authStack = createStackNavigator({
 );
 
 const AppNavigator = createSwitchNavigator({
-    InitScreen: {
+	InitScreen: {
         screen: InitScreen,
         navigationOptions: {
             header: null

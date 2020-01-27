@@ -178,6 +178,7 @@ const en = {
     'bankAcc'            : 'Bank accounts',
     'bankName'            : 'Bank name',
     'bankNum'            : 'Account number',
+    'chat'            : 'Chat',
 };
 
 export default en;

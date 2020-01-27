@@ -182,6 +182,7 @@ const ar = {
     'bankAcc'            : 'الحسابات البنكية',
     'bankName'            : 'اسم البنك',
     'bankNum'            : 'رقم الحساب',
+	'chat'            : 'الدردشة',
 };
 
 export default ar;

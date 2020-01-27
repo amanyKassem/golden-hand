@@ -1227,6 +1227,74 @@ const styles = ({
     writing:{
         writingDirection: I18nManager.isRTL ? 'rtl' : 'ltr'
     },
+    chatRow: {
+        flexDirection: 'row',
+        borderBottomWidth: 1,
+        borderBottomColor: COLORS.opcity_gray,
+        paddingHorizontal: 15,
+        paddingVertical: 5
+	},
+    chatAvatar: {
+        width: 60,
+        height: 60,
+        borderRadius: 30,
+        borderWidth: 1,
+        borderColor: COLORS.midBrown,
+        marginRight: 10
+    },
+    chatUsername: {
+        alignSelf: 'flex-start',
+        color: COLORS.bold_gray,
+        flex: 3,
+        marginTop: 5
+    },
+    chatTime: {
+		alignSelf: 'flex-end',
+		flex: 1,
+        color: COLORS.bold_gray,
+    },
+    chatMsg: {
+        color: COLORS.black
+    },
+    senderMsg:{
+        backgroundColor: '#92662bd9',
+		maxWidth: '80%',
+        alignSelf: 'flex-start',
+        margin: 10,
+        padding: 10,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        borderBottomRightRadius: 20
+    },
+    senderText: {
+        color: '#fff',
+        alignSelf: 'flex-start'
+    },
+    reciverText: {
+        color: '#fff',
+		alignSelf: 'flex-start',
+    },
+    reciverMsg:{
+        backgroundColor: '#bfa684e0',
+        flexDirection: 'row',
+        maxWidth: '80%',
+		margin: 10,
+		padding: 10,
+		alignSelf: 'flex-end',
+		borderTopLeftRadius: 20,
+		borderBottomLeftRadius: 20,
+		borderBottomRightRadius: 20
+
+    },
+	reciverImg:{
+		width: 40,
+		height: 40,
+		borderRadius: 30,
+		borderWidth: 1,
+		borderColor: COLORS.midBrown,
+		marginRight: 10,
+        marginTop: 3
+    }
 });
 
 export default styles;
